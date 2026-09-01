@@ -1,0 +1,1473 @@
+
+
+* {
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+#hero {
+    height: 120vh;  
+    background:
+            radial-gradient(
+            circle at 20% 10%,
+            rgba(249, 211, 205, 0.252),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 25% 10%,
+            rgba(177, 117, 108, 0.241),
+            transparent 40%
+        ),
+                radial-gradient(
+            circle at 40% 10%,
+            rgba(223, 138, 125, 0.295),
+            transparent 40%
+        ),
+                radial-gradient(
+            circle at 55% 10%,
+            rgba(119, 240, 177, 0.36),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 70% 30%,
+            rgba(50, 120, 83, 0.292),
+            transparent 40%
+        ),
+        #f5f5f0;
+}
+
+
+
+.nav .logo img{
+      width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav .logo p{
+font-family: "Antonio", sans-serif;
+font-weight: 500;
+font-size: 23px;
+line-height: 1;
+color: #393b39; 
+}
+
+.nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.nav .nav-list {
+display: flex;
+gap: 30px;
+}
+
+.nav .nav-list .li2{
+    font-family: Roboto Flex;
+font-weight: 500;
+font-size: 16.6667px;
+line-height: 32px;
+color: gray ;
+font-style: normal;
+transition: 0.5s;
+}
+
+.li1{
+color: black;
+font-family: Roboto Flex;
+font-weight: 500;
+font-size: 16.6667px;
+line-height: 32px;
+font-style: normal;
+}
+
+.nav .nav-list li:hover{
+    color: black;
+}
+
+
+.hero-info{
+    width: 90%;
+    text-align: center;
+    margin: 17vh auto 0;
+}
+
+
+.hero-info span{
+    font-family:"Roboto Flex";
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+color: #858b85;
+font-style: normal;
+position: relative;
+}
+
+.hero-info span::after{
+      content: "";      
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  width: 170px;
+  height: 1px;
+  transform: translate(-50%);
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+h1{
+font-family: "Antonio";
+font-weight: 600;
+font-size: 200px;
+margin-top: 30px;
+color: #C16B49;
+font-style: normal;
+}
+
+.hero-info p{
+    font-family: "Instrument Serif";
+font-weight: 400;
+font-size: 34.36px;
+line-height: 1.4;
+color: #141514;
+font-style: normal;
+width: 65%;
+margin: 35px auto 0;
+}
+
+
+
+#profile{
+    background-color: #131417;
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     width: 85%;
+    gap: 50px;
+}
+
+.profile-img h2{
+    color: #C16B49;
+    font-family: Antonio;
+font-weight: 400;
+font-size: 29px;
+line-height: 28.8px;
+font-style: normal;
+padding-bottom: 25px;
+}
+
+.num::after{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 1px;
+    background-color: #4d524dc4;
+    vertical-align: middle;
+    margin: auto 10px;
+}
+
+.profile-head{
+    width: 40%;
+   
+} 
+
+.profile-img img{
+    width: 100%;
+    opacity: 0.7;
+}
+
+.profile-head .img-wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-head .social{
+    background-color: rgba(0, 0, 0, 0.767);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transform: translateY(100%);
+    transition: 1s;
+}
+
+.profile-head .img-wrap:hover .social{
+    transform: translateY(0);
+}
+
+.social i{
+    /* font-size: 20px; */   
+    background-color: #5b5454c9; 
+    width: 30px;              
+    height: 30px;              
+    border-radius: 50%;       
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;        
+
+}
+
+.social i:hover {
+    background-color: #cccccc; 
+}
+
+.social .g{
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.profile-info{
+    width: 50%;
+    margin-top: 40px;
+}
+
+
+.p1{
+    font-family: Instrument Serif;
+font-weight: 400;
+font-size: 33px;
+line-height: 48.104px;
+color: #f9f9f9;
+font-style: normal;
+width: 100%;
+margin: 45px auto;
+}
+
+.p2{
+    font-family: Roboto Flex;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+color: #cbd1cb;
+font-style: normal;
+width: 90%;
+margin: 25px 0;
+}
+
+
+.status-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; 
+  padding: 20px 0;
+}
+
+
+.status-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background-color: #333;
+  z-index: 1; 
+  transform: translateY(-50%);
+}
+
+
+.status-badge {
+  position: relative;
+  z-index: 2; 
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1e2520; 
+  border: 1px solid #2e3831; 
+  padding: 8px 16px;
+  border-radius: 8px; 
+}
+
+
+.status-text {
+  color: #e0e0e0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.status-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: #4caf50; 
+  border-radius: 50%;
+}
+
+
+.status-dot::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4caf50; 
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse-wave 2s infinite ease-in-out;
+}
+
+
+@keyframes pulse-wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(3.5); 
+    opacity: 0;
+  }
+}
+
+
+#experience {
+    /* background-color: #f5f5f0; */
+    padding: 150px 20px 0;
+}
+
+.experience-section {
+    width: 88%;
+    margin: auto;
+}
+
+.section-title h2 {
+    color: #C16B49;
+    font-family: Antonio;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 28.8px;
+    font-style: normal;
+    margin-bottom: 70px;
+}
+
+.experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 50px;
+}
+
+.experience-item {
+    width: 45%;
+}
+
+.experience-item h3 {
+    font-family: Roboto Flex;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #141514;
+    margin-bottom: 10px;
+}
+
+.experience-item span {
+    font-family: Roboto Flex;
+    font-size: 17px;
+    color: #858b85;
+}
+
+.experience-item .date {
+    font-family: Roboto Flex;
+    font-size: 16px;
+    color: #858b85;
+    margin: 8px 0 20px;
+}
+
+.experience-item > p:last-child {
+    font-family: Roboto Flex;
+    font-size: 17px;
+    line-height: 1.7;
+    color: black;
+}
+
+#experience::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    margin: 80px auto 0;
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+#education {
+    /* background-color: #131417; */
+    padding: 80px 0;
+}
+
+.education-section {
+    width: 85%;
+    margin: auto;
+}
+
+.education-section .section-title h2 {
+    color: #C16B49;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.education-item {
+    width: 50%;
+}
+
+.education-item h3 {
+    font-family: Roboto Flex;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #141514;
+    margin-bottom: 10px;
+}
+
+.education-item span {
+    font-family: Roboto Flex;
+    font-size: 17px;
+    color: #858b85;
+}
+
+.education-item .date {
+    font-family: Roboto Flex;
+    font-size: 16px;
+    color: #858b85;
+    margin: 8px 0 20px;
+}
+
+.education-item > p:last-child {
+    font-family: Roboto Flex;
+    font-size: 17px;
+    line-height: 1.7;
+    color: black;
+}
+
+#education::after {
+    content: "";
+    display: block;
+    width: 79%;
+    height: 1px;
+    margin: 80px auto 0;
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+#what-i-do {
+    padding: 20px 0;
+}
+
+.what-section {
+    width: 85%;
+    margin: auto;
+}
+
+.what-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.what-item {
+    width: 25%;
+}
+
+.what-item i {
+    font-size: 30px;
+    color: #C16B49;
+    margin-bottom: 25px;
+}
+
+.what-item h3 {
+    font-family: Roboto Flex;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.3;
+    color: #141514;
+    margin-bottom: 15px;
+}
+
+.what-item p {
+    font-family: Roboto Flex;
+    font-size: 16px;
+    line-height: 1.7;
+    color: black;
+}
+
+
+
+#portfolio {
+    background-color: #f5f5f0;
+    margin-top: 100px;
+    padding: 120px 0;
+}
+
+
+.portfolio-head {
+    width: 85%;
+    margin: 0 auto 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.portfolio-title {
+    width: 35%;
+}
+
+
+.portfolio-title h2 {
+    color: #C16B49;
+    font-family: "Antonio";
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 28.8px;
+}
+
+
+.portfolio-intro {
+    width: 55%;
+}
+
+
+.portfolio-intro p {
+    font-family: "Instrument Serif";
+    font-size: 33px;
+    line-height: 1.4;
+    color: #141514;
+    margin: 0;
+}
+
+
+.projects {
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+
+
+.project {
+    width: 45%;
+    margin: auto ;
+}
+
+
+.project-card {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+
+.project-overlay h3 {
+    font-family: "Instrument Serif";
+    font-size: 45px;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+.project-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #131417;
+    z-index: 10;
+    overflow-y: auto;
+    display: none;
+
+}
+
+
+.project-page:target {
+    display: block;
+}
+
+
+
+.project-page-content {
+    width: 85%;
+    margin: 60px auto;
+}
+
+
+.project-main-image {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.project-page-info {
+    width: 85%;
+    margin: 60px auto;
+    color: white;
+}
+
+
+.project-page-info h3 {
+    font-family: "Instrument Serif";
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.project-page-info > p {
+    font-family: "Roboto Flex";
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cbd1cb;
+    margin-bottom: 45px;
+}
+
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+.project-info div {
+    width: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 15px;
+}
+
+
+.project-info h4 {
+    font-family: "Roboto Flex";
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.project-info p {
+    font-family: "Roboto Flex";
+    font-size: 17px;
+    line-height: 1.5;
+    color: #cbd1cb;
+}
+
+
+
+.project-link {
+    display: inline-block;
+    font-family: "Roboto Flex";
+    font-size: 14px;
+    color: #131417;
+    background-color: #d5d5d0;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.project-link:hover {
+    background-color: white;
+}
+
+
+.close-project {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: white;
+    font-family: "Roboto Flex";
+    font-size: 40px;
+    z-index: 20;
+    transition: 0.3s;
+}
+
+
+.close-project:hover {
+    color: #C16B49;
+}
+
+
+
+#contact {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-info {
+    width: 60%;
+}
+
+.contact-small {
+    font-family: "Roboto Flex";
+    font-size: 20px;
+    color: #858b85;
+}
+
+.contact-intro {
+    font-family: "Instrument Serif";
+    font-size: 35px;
+    line-height: 1.35;
+    color: #141514;
+    width: 90%;
+    margin: 20px 0 45px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-buttons a {
+    font-family: "Roboto Flex";
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.email-btn {
+    background-color: #131417;
+    color: white;
+}
+
+.email-btn:hover {
+    background-color: #C16B49;
+}
+
+.cv-btn {
+    border: 1px solid #999;
+    color: #333;
+}
+
+.cv-btn:hover {
+    background-color: #131417;
+    color: white;
+}
+
+
+.contact-links {
+    width: 25%;
+}
+
+.say-hello h3,
+.find-me h3 {
+    font-family: "Roboto Flex";
+    font-weight: 600;
+    font-size: 20px;
+    color: #202220;
+    margin-bottom: 10px;
+}
+
+.say-hello a,
+.say-hello p,
+.online-links a {
+    font-family: "Roboto Flex";
+    font-size: 20px;
+    color: #666b66;
+}
+
+.say-hello a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.say-hello p {
+    margin: 10px 0;
+}
+
+.find-me {
+    margin-top: 45px;
+}
+
+.online-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.online-links a{
+border-bottom: #00000030  solid 1px;
+}
+
+.online-links a:hover {
+    color: #141514;
+}
+
+
+
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+
+@media (max-width: 1024px) {
+
+    /* Hero */
+
+    #hero {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 100px;
+    }
+
+    .nav {
+        width: 90%;
+    }
+
+    .hero-info {
+        width: 90%;
+        margin-top: 15vh;
+    }
+
+    h1 {
+        font-size: 120px;
+    }
+
+    .hero-info p {
+        width: 80%;
+        font-size: 28px;
+    }
+
+
+    /* Profile */
+
+    #profile {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+
+    .profile-section {
+        width: 90%;
+        gap: 40px;
+    }
+
+    .profile-head {
+        width: 42%;
+    }
+
+    .profile-info {
+        width: 53%;
+    }
+
+    .p1 {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .p2 {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    /* Experience */
+
+    .experience-section {
+        width: 90%;
+    }
+
+    .experience-item {
+        width: 47%;
+    }
+
+
+    /* Education */
+
+    .education-section {
+        width: 90%;
+    }
+
+
+    /* What I Do */
+
+    .what-section {
+        width: 90%;
+    }
+
+    .what-content {
+        flex-wrap: wrap;
+        gap: 40px 20px;
+    }
+
+    .what-item {
+        width: 47%;
+    }
+
+
+    /* Portfolio */
+
+    .portfolio-head {
+        width: 90%;
+    }
+
+    .portfolio-title {
+        width: 35%;
+    }
+
+    .portfolio-intro {
+        width: 60%;
+    }
+
+    .portfolio-intro p {
+        font-size: 28px;
+    }
+
+    .projects {
+        width: 90%;
+    }
+
+    .project {
+        width: 48%;
+    }
+
+    .project-card {
+        height: 400px;
+    }
+
+
+    /* Contact */
+
+    .contact-section {
+        width: 90%;
+    }
+
+    .contact-intro {
+        font-size: 30px;
+    }
+
+    .contact-links {
+        width: 30%;
+    }
+
+}
+
+
+
+/* -------- Mobile -------- */
+
+@media (max-width: 700px) {
+
+    /* General */
+
+    .nav,
+    .profile-section,
+    .experience-section,
+    .education-section,
+    .what-section,
+    .portfolio-head,
+    .projects,
+    .contact-section {
+        width: 90%;
+    }
+
+
+    /* Navbar */
+
+    .nav {
+        padding-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav .logo p {
+        font-size: 20px;
+    }
+
+    .nav .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .nav .nav-list {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav .nav-list .li2,
+    .li1 {
+        font-size: 14px;
+    }
+
+
+    /* Hero */
+
+    #hero {
+        min-height: 100vh;
+        padding-bottom: 80px;
+    }
+
+    .hero-info {
+        width: 90%;
+        margin-top: 12vh;
+    }
+
+    .hero-info span {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .hero-info span::after {
+        width: 120px;
+        bottom: -25px;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 1;
+        margin-top: 25px;
+    }
+
+    .hero-info p {
+        width: 95%;
+        font-size: 23px;
+        line-height: 1.4;
+        margin-top: 30px;
+    }
+
+
+    /* Profile */
+
+    #profile {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .profile-head,
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-info {
+        margin-top: 0;
+    }
+
+    .profile-img h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .p1 {
+        font-size: 27px;
+        line-height: 1.45;
+        margin: 20px 0 30px;
+    }
+
+    .p2 {
+        width: 100%;
+        font-size: 17px;
+        line-height: 1.7;
+        margin: 20px 0;
+    }
+
+    .status-container {
+        margin-top: 30px;
+    }
+
+
+    /* Section Titles */
+
+    .section-title h2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+
+    /* Experience */
+
+    #experience {
+        padding: 90px 0 0;
+    }
+
+    .experience-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .experience-item {
+        width: 100%;
+    }
+
+    .experience-item h3 {
+        font-size: 21px;
+    }
+
+    .experience-item span {
+        font-size: 16px;
+    }
+
+    .experience-item .date {
+        font-size: 15px;
+    }
+
+    .experience-item > p:last-child {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    #experience::after {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+
+    /* Education */
+
+    #education {
+        padding: 70px 0;
+    }
+
+    .education-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .education-item {
+        width: 100%;
+    }
+
+    .education-item h3 {
+        font-size: 21px;
+    }
+
+    .education-item span {
+        font-size: 16px;
+    }
+
+    .education-item .date {
+        font-size: 15px;
+    }
+
+    .education-item > p:last-child {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    #education::after {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+
+    /* What I Do */
+
+    #what-i-do {
+        padding: 20px 0 70px;
+    }
+
+    .what-content {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .what-item {
+        width: 100%;
+    }
+
+    .what-item i {
+        font-size: 27px;
+        margin-bottom: 18px;
+    }
+
+    .what-item h3 {
+        font-size: 20px;
+    }
+
+    .what-item p {
+        font-size: 16px;
+    }
+
+
+    /* Portfolio */
+
+    #portfolio {
+        margin-top: 40px;
+        padding: 80px 0;
+    }
+
+    .portfolio-head {
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-title,
+    .portfolio-intro {
+        width: 100%;
+    }
+
+    .portfolio-title h2 {
+        font-size: 25px;
+    }
+
+    .portfolio-intro p {
+        font-size: 27px;
+        line-height: 1.4;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .project {
+        width: 100%;
+        margin: 0;
+    }
+
+    .project-card {
+        height: 350px;
+    }
+
+    .project-overlay h3 {
+        font-size: 38px;
+    }
+
+
+    /* Project Details */
+
+    .project-page-content {
+        width: 90%;
+        margin: 70px auto 40px;
+    }
+
+    .project-main-image {
+        max-height: 400px;
+    }
+
+    .project-page-info {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .project-page-info h3 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    .project-page-info > p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 35px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .project-info div {
+        width: 100%;
+    }
+
+    .project-info p {
+        font-size: 16px;
+    }
+
+    .project-link {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    .close-project {
+        top: 15px;
+        right: 20px;
+        font-size: 35px;
+    }
+
+
+    /* Contact */
+
+    #contact {
+        min-height: auto;
+        padding: 90px 0;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .contact-info,
+    .contact-links {
+        width: 100%;
+    }
+
+    .contact-small {
+        font-size: 18px;
+    }
+
+    .contact-intro {
+        width: 100%;
+        font-size: 29px;
+        line-height: 1.4;
+        margin: 20px 0 35px;
+    }
+
+    .contact-buttons {
+        flex-wrap: wrap;
+    }
+
+    .contact-buttons a {
+        font-size: 15px;
+        padding: 13px 20px;
+    }
+
+    .say-hello h3,
+    .find-me h3 {
+        font-size: 18px;
+    }
+
+    .say-hello a,
+    .say-hello p,
+    .online-links a {
+        font-size: 17px;
+    }
+
+    .find-me {
+        margin-top: 35px;
+    }
+
+}
+
+
+
+/* -------- Small Mobile -------- */
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .hero-info p {
+        font-size: 21px;
+    }
+
+    .nav .nav-list {
+        gap: 12px;
+    }
+
+    .nav .nav-list .li2,
+    .li1 {
+        font-size: 13px;
+    }
+
+    .p1 {
+        font-size: 24px;
+    }
+
+    .portfolio-intro p {
+        font-size: 24px;
+    }
+
+    .project-card {
+        height: 300px;
+    }
+
+    .contact-intro {
+        font-size: 26px;
+    }
+
+}
