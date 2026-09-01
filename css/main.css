@@ -1038,7 +1038,7 @@ border-bottom: #00000030  solid 1px;
 
 /* -------- Mobile -------- */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     /* General */
 
@@ -1062,6 +1062,7 @@ border-bottom: #00000030  solid 1px;
         gap: 20px;
     }
 
+    
     .nav .logo p {
         font-size: 20px;
     }
@@ -1092,7 +1093,7 @@ border-bottom: #00000030  solid 1px;
 
     .hero-info {
         width: 90%;
-        margin-top: 12vh;
+        margin-top: 15vh;
     }
 
     .hero-info span {
@@ -1102,7 +1103,7 @@ border-bottom: #00000030  solid 1px;
 
     .hero-info span::after {
         width: 120px;
-        bottom: -25px;
+        bottom: -18px;
     }
 
     h1 {
@@ -1113,7 +1114,7 @@ border-bottom: #00000030  solid 1px;
 
     .hero-info p {
         width: 95%;
-        font-size: 23px;
+        font-size: 28px;
         line-height: 1.4;
         margin-top: 30px;
     }
@@ -1433,7 +1434,7 @@ border-bottom: #00000030  solid 1px;
 
 
 
-/* -------- Small Mobile -------- */
+/* -------- Small Mobile --------
 
 @media (max-width: 400px) {
 
@@ -1470,4 +1471,4 @@ border-bottom: #00000030  solid 1px;
         font-size: 26px;
     }
 
-}
+} */
